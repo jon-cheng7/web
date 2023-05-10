@@ -1,5 +1,5 @@
 {
-  "homepage": "https://jon-cheng7.github.io",
+  "homepage": "http://jon-cheng7.github.io/web",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predploy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
