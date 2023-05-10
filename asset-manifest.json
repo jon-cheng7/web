@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.062972ae.css",
-    "main.js": "/web/static/js/main.35cf7b9d.js",
-    "static/js/787.28cb0dcd.chunk.js": "/web/static/js/787.28cb0dcd.chunk.js",
-    "static/media/pfp.png": "/web/static/media/pfp.725bfe127a50e734662f.png",
-    "static/media/waterloo.jpeg": "/web/static/media/waterloo.3a47a0dac219fd01205f.jpeg",
-    "static/media/Cygre-Book.ttf": "/web/static/media/Cygre-Book.d79cf7d3f0a55432b5cd.ttf",
-    "static/media/Cygre-Bold.ttf": "/web/static/media/Cygre-Bold.4c89a0b0a449cad019a6.ttf",
-    "static/media/Cygre-Black.ttf": "/web/static/media/Cygre-Black.0074472deed18d7bc581.ttf",
-    "static/media/Cygre-Light.ttf": "/web/static/media/Cygre-Light.775c9598f223fcf81328.ttf",
-    "static/media/Gyanko-Regular.otf": "/web/static/media/Gyanko-Regular.54a26edf9e4314b9b470.otf",
-    "static/media/background lines.svg": "/web/static/media/background lines.3786e9a312faf539ae77.svg",
-    "index.html": "/web/index.html",
-    "main.062972ae.css.map": "/web/static/css/main.062972ae.css.map",
-    "main.35cf7b9d.js.map": "/web/static/js/main.35cf7b9d.js.map",
-    "787.28cb0dcd.chunk.js.map": "/web/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/static/css/main.e02465ca.css",
+    "main.js": "/static/js/main.1bd4afb3.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/pfp.png": "/static/media/pfp.725bfe127a50e734662f.png",
+    "static/media/waterloo.jpeg": "/static/media/waterloo.3a47a0dac219fd01205f.jpeg",
+    "static/media/Cygre-Book.ttf": "/static/media/Cygre-Book.d79cf7d3f0a55432b5cd.ttf",
+    "static/media/Cygre-Bold.ttf": "/static/media/Cygre-Bold.4c89a0b0a449cad019a6.ttf",
+    "static/media/Cygre-Black.ttf": "/static/media/Cygre-Black.0074472deed18d7bc581.ttf",
+    "static/media/Cygre-Light.ttf": "/static/media/Cygre-Light.775c9598f223fcf81328.ttf",
+    "static/media/Gyanko-Regular.otf": "/static/media/Gyanko-Regular.54a26edf9e4314b9b470.otf",
+    "static/media/background lines.svg": "/static/media/background lines.3786e9a312faf539ae77.svg",
+    "index.html": "/index.html",
+    "main.e02465ca.css.map": "/static/css/main.e02465ca.css.map",
+    "main.1bd4afb3.js.map": "/static/js/main.1bd4afb3.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.062972ae.css",
-    "static/js/main.35cf7b9d.js"
+    "static/css/main.e02465ca.css",
+    "static/js/main.1bd4afb3.js"
   ]
 }
