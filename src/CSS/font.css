@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* @font-face {
+  font-family: 'Title';
+  src: url('../../public/fonts/Glitten-Regular.otf') format('truetype');
+} */
+
+@font-face {
+  font-family: 'Title';
+  src: url('../../public/fonts/Gyanko-Regular.otf') format('truetype');
+}
+  
+/* @font-face {
+  font-family: 'Body';
+  src: url('../../public/fonts/Mosk\ Extra-Light\ 200.ttf') format('truetype'),
+        url('../../public/fonts/Mosk\ Light\ 300.ttf') format('truetype'),
+        url('../../public/fonts/Mosk\ Normal\ 400.ttf') format('truetype');
+} */
+
+@font-face {
+  font-family: 'Body';
+  src: url('../../public/fonts/Cygre-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cygre-Light';
+  src: url('../../public/fonts/Cygre-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cygre-Bold';
+  src: url('../../public/fonts/Cygre-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cygre-Black';
+  src: url('../../public/fonts/Cygre-Black.ttf') format('truetype');
+}

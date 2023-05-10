@@ -1,0 +1,153 @@
+
+/* SHAPES */
+.circ {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    z-index : 1;
+    animation-duration: 20s;
+    animation-name: brownian;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .c1 {
+    width: 90px;
+    height: 90px;
+    top: 200px;
+    left: 1090px;
+    animation-delay: -1s;
+  }
+  
+  .c2 {
+    width: 40px;
+    height: 40px;
+    top: 350px;
+    left: 1235px;
+    animation-delay: -2s;
+  }
+  
+  .c3 {
+    width: 100px;
+    height: 100px;
+    top: 630px;
+    left: 1315px;
+    animation-delay: -8s;
+  }
+  
+  .c4 {
+    width: 140px;
+    height: 140px;
+    top: 170px;
+    left: 1625px;
+    animation-delay: -9s;
+  }
+  
+  .c5 {
+    width: 70px;
+    height: 70px;
+    top: 370px;
+    left: 350px;
+  }
+  
+  .c6 {
+    width: 80px;
+    height: 80px;
+    top: 800px;
+    left: -30px;
+    animation-delay: -11s;
+  }
+
+  .c7 {
+    width: 130px;
+    height: 130px;
+    top: 125%;
+    left: 75%;
+    animation-delay: -11s;
+    z-index: -1;
+  }
+
+  .c8 {
+    width: 160px;
+    height: 160px;
+    top: 120%;
+    left: 2.5%;
+    animation-delay: -7s;
+  }
+  
+  @keyframes brownian {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    10% {
+      transform: translate(-10px, 10px) rotate(15deg);
+    }
+    20% {
+      transform: translate(10px, -10px) rotate(-15deg);
+    }
+    30% {
+      transform: translate(5px, 10px) rotate(-30deg);
+    }
+    40% {
+      transform: translate(-10px, -5px) rotate(30deg);
+    }
+    50% {
+      transform: translate(10px, 5px) rotate(20deg);
+    }
+    60% {
+      transform: translate(-5px, -10px) rotate(-20deg);
+    }
+    70% {
+      transform: translate(-10px, 10px) rotate(5deg);
+    }
+    80% {
+      transform: translate(10px, -5px) rotate(-5deg);
+    }
+    90% {
+      transform: translate(-5px, 10px) rotate(-10deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+
+  @keyframes brownian2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(-10px, 10px);
+    }
+    20% {
+      transform: translate(10px, -10px);
+    }
+    30% {
+      transform: translate(5px, 10px);
+    }
+    40% {
+      transform: translate(-10px, -5px);
+    }
+    50% {
+      transform: translate(10px, 5px);
+    }
+    60% {
+      transform: translate(-5px, -10px);
+    }
+    70% {
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      transform: translate(10px, -5px);
+    }
+    90% {
+      transform: translate(-5px, 10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  

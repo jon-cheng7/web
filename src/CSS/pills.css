@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #1D1B17;
+    --wbrown: #B7B0A4;
+    --wgreen: #4C6C54;
+    --white: #FFFFFF;
+  }
+  
+  .pillRed {
+    position: absolute;
+    transform: scale(0.8);
+    top: -50%;
+    left: -15%;
+    stroke-dasharray: 500 10000; /* Set the dash length and gap length */
+    z-index: 1;
+  }
+  
+  .pillWhite2 {
+    position: absolute;
+    transform: scale(0.8);
+    top: 175%;
+    left: -50%;
+    stroke-dasharray: 500 10000; /* Set the dash length and gap length */
+    z-index: 2;
+  }
+  
+  .pillWhite {
+    position: absolute;
+    transform: scale(2.2);
+    top: 10%;
+    left: -10%;
+    stroke-dasharray: 250 10000; /* Set the dash length and gap length */
+  }
+  
+  .pillBlue {
+    position: absolute;
+    transform: scale(0.7);
+    top: 45%;
+    left: 65%;
+    stroke-dasharray: 400 10000; /* Set the dash length and gap length */
+  }
+  .circleSelection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .greencircle {
+    position: absolute;
+    transform: scale(0.7);
+    stroke-dasharray: 300 10000; /* Set the dash length and gap length */
+    transform-origin: top;
+    top: 250%;
+    z-index: 1;
+  }
+  
+  .browncircle {
+    position: absolute;
+    transform: scale(0.7);
+    stroke-dasharray: 300 10000; /* Set the dash length and gap length */
+    transform-origin: top;
+    top: 250%;
+  }
+  
+  .whitecircle {
+    position: absolute;
+    transform: scale(0.7);
+    stroke-dasharray: 300 10000; /* Set the dash length and gap length */
+    transform-origin: top;
+    top: 250%;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -3000; /* Adjust the value according to the sum of the dash length and gap length */
+    }
+  }
+  
+  .brown2 {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    border-radius: 400px;
+    background-color: var(--wgreen);
+    top: 125%;
+    left: 5%;
+  }
+  
