@@ -110,7 +110,7 @@ body {
     position: absolute;
     max-width: 150%;
     max-height: 150%;
-    top: 70%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
@@ -276,7 +276,7 @@ body {
   
   
   .project1 .ans {
-    margin-top: 10%;
+    margin-top: 25%;
   }
   
   .tool {

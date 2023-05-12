@@ -1,14 +1,18 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import Modal from 'react-modal';
 import './CSS/App.css';
 import './CSS/buttons.css';
 import './CSS/circle.css';
 import './CSS/font.css';
 import './CSS/pills.css';
 import './CSS/var.css';
+import './CSS/modal.css';
 import ListItem from './Components/ListItem.js';
 import Education from './Components/Education.js';
 import Technologies from './Components/Technologies.js';
 import Skills from './Components/Skills.js';
+
+Modal.setAppElement('#root');
 
 function App() {
   const [showParagraph, setShowParagraph] = useState(false);
@@ -17,6 +21,7 @@ function App() {
   const [showbox1, setShowbox1] = useState(false);
   const [showbox2, setShowbox2] = useState(false);
   const [showbox3, setShowbox3] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(true);
   const screen2Ref = useRef();
   const aboutRef = useRef();
   const aboutRef2 = useRef();
@@ -26,9 +31,14 @@ function App() {
   const [stoppedOffsetBlue, setStoppedOffsetBlue] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
   const items = ['Education', 'Technologies', 'Skills & Hobbies'];
+  const circles = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8',  'c9', 'c10', 'c11', 'c12', 'c13'];
   const fontColors = ['#4C4F6C', '#ED5151', '#FFFFFF'];
   
   //test
+  function closeModal() {
+    setModalIsOpen(false);
+  }
+
   //cursor animations
   useEffect(() => {
     const coords = { x: 0, y: 0 };
@@ -219,6 +229,30 @@ function App() {
           .fill()
           .map((_, index) => <div key={index} className="circle"></div>)
       }
+      <div>
+        <Modal
+          className="modal"
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Work in Progress Warning"
+          style={{
+            overlay: {
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              backgroundColor: 'rgba(0,0,0,0.5)',
+              zIndex: 1000,
+            },
+            content: {
+              color: 'black',
+            }
+          }}
+        >
+          <h2>Warning</h2>
+          <p>This website is still a work in progress. Some features may not work as expected.</p>
+          <button onClick={closeModal}>Close Warning</button>
+        </Modal>
+      </div>
       {/* main pill elements */}
       <svg class="pillRed" width="3198" height="2957" viewBox="0 0 3198 2957" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1274 250V355V460V565V670C1274 994.5 1215 1234 956 1358.5C697 1483 250 1559.5 250 1987.5C250 1987.5 250 2200 250 2329C250 2548.5 419 2678.5 547 2700C869.319 2754.14 1008.94 2424.5 1054.34 2312.5C1327.34 1639 1477.34 2031.5 2947.84 2031.5" stroke="#ED5151" stroke-width="500" stroke-linecap="round"/>
@@ -239,17 +273,14 @@ function App() {
           <button className="rounded-button">portfolio</button>
           <button className="rounded-button">resume</button>
         </div>
-        <div className="circ c1"></div>
-        <div className="circ c2"></div>
-        <div className="circ c3"></div>
-        <div className="circ c4"></div>
-        <div className="circ c5"></div>
-        <div className="circ c6"></div>
+        <div>
+        {circles.map((circle, index) => (
+            <div key={index} className={`circ ${circle}`}></div>
+        ))}
+    </div>
       </header>
       <div className="screen2">
         {/* Circle elements */}
-        <div className="circ c7"></div>
-        <div className="circ c8"></div>
         <div className="screen2" ref={screen2Ref}>
           <p className={showParagraph ? 'visible' : 'hidden2'}>
             &emsp;&emsp;&emsp;My name’s Jonathan Cheng and I’m a creative and
@@ -258,7 +289,7 @@ function App() {
             University of Waterloo with hopes to specialize in data sciences.
           </p>
           <div class={`pfp-container ${showPfp ? 'visible' : 'hidden'}`}>
-            <img class="pfp" src={require("./assets/pfp.png")} alt="pfp"/>
+            <img class="pfp" src={require("./assets/pfp.JPEG")} alt="pfp"/>
           </div>
         </div>
       </div>
@@ -293,16 +324,16 @@ function App() {
       </svg>
         <p ref={aboutRef} className="my-work">MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK MY WORK</p>
         <div className={`project1 ${showbox1 ? 'visible' : 'hidden'}`}>
-          <p className="topic">Education</p>
-          <p className="ans">University <br></br>of Waterloo</p>
+          <p className="topic">Work</p>
+          <p className="ans">Experiences</p>
         </div>
         <div className={`tool ${showbox2 ? 'visible' : 'hidden'}`}>
-          <p className="topic">Skills</p>
-          <p className="ans">Technologies</p>
+          <p className="topic">Personal</p>
+          <p className="ans">Project Portfolio</p>
         </div>
         <div className={`more ${showbox3 ? 'visible' : 'hidden'}`}>
           <p className="topic">More</p>
-          <p className="ans">Skills & <br></br>Hobbies</p>
+          <p className="ans">Art & <br></br>Others</p>
         </div>
         <img class={`loo ${showbox0 ? 'visible' : 'hidden'}`} src={require("./assets/waterloo.jpeg")} alt="loo"/>
       </div>

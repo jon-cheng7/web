@@ -1,0 +1,12 @@
+.Tech-text {
+    position: absolute;
+    font-style: normal;
+    font-size: 30px;
+    text-align: justify;
+    color: white;
+    width: 28%;
+    top: 50%;
+    left: 15%;
+    z-index: 100;
+    line-height: 170%;
+}
