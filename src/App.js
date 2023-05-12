@@ -28,7 +28,7 @@ function App() {
   const items = ['Education', 'Technologies', 'Skills & Hobbies'];
   const fontColors = ['#4C4F6C', '#ED5151', '#FFFFFF'];
   
-
+  //test
   //cursor animations
   useEffect(() => {
     const coords = { x: 0, y: 0 };
