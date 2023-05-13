@@ -7,6 +7,7 @@ body {
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
   }
+  
   body::-webkit-scrollbar {
     display: none;
   }
@@ -58,7 +59,7 @@ body {
     font-style: normal;
     padding-left: 10%;
     width: 65%;
-    top: 50%;
+    top: 55%;
     left: 13%;
     z-index: 3;
     opacity: 0;
@@ -132,7 +133,7 @@ body {
     font-size: 700%;
     font-weight: 400;
     font-style: normal;
-    color: rgba(255, 255, 255, 0.174);
+    color: rgba(255, 255, 255, 0.43);
     position: relative;
     font-size: 300px;
     margin:0;
@@ -212,7 +213,7 @@ body {
     font-style: normal;
     width: 300%;
     white-space: nowrap;
-    top: 50%;
+    top: 60%;
   }
   
   .project1 {
@@ -221,7 +222,7 @@ body {
     height: 150px;
     width: 300px;
     border-radius: 25px;
-    top: 45%;
+    top: 48%;
     left: 5%;
     padding: 1%;
     color: white;
@@ -276,7 +277,7 @@ body {
   
   
   .project1 .ans {
-    margin-top: 25%;
+    margin-top: 20%;
   }
   
   .tool {
@@ -285,7 +286,7 @@ body {
     height: 150px;
     width: 500px;
     border-radius: 25px;
-    top: 83%;
+    top: 80%;
     left: 25%;
     padding: 1%;
     color: white;
@@ -294,7 +295,7 @@ body {
   }
   
   .tool .ans {
-    margin-top: 15%;
+    margin-top: 12%;
   }
   
   .more {
@@ -303,7 +304,7 @@ body {
     height: 150px;
     width: 300px;
     border-radius: 25px;
-    top: 83%;
+    top: 80%;
     left: 58%;
     padding: 1%;
     color: white;
@@ -312,7 +313,7 @@ body {
   }
   
   .more .ans {
-    margin-top: 12%;
+    margin-top: 6%;
   }
   
   .topic {
@@ -373,7 +374,7 @@ body {
   
   .sq1 {
     position: relative;
-    top: 55%;
+    top: 54%;
     left: 28%;
     z-index: 5;
     animation-duration: 20s;
@@ -386,7 +387,7 @@ body {
   
   .sq2 {
     position: relative;
-    top: 75%;
+    top: 60%;
     left: 8%;
     z-index: 5;
     animation-duration: 20s;
@@ -399,8 +400,8 @@ body {
   
   .sq3 {
     position: relative;
-    top: 75%;
-    left: 65%;
+    top: 45%;
+    left: 80%;
     z-index: 5;
     animation-duration: 20s;
     animation-name: brownian2;

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Modal from 'react-modal';
+import './CSS/tailwind.css';
 import './CSS/App.css';
 import './CSS/buttons.css';
 import './CSS/circle.css';
@@ -7,6 +8,7 @@ import './CSS/font.css';
 import './CSS/pills.css';
 import './CSS/var.css';
 import './CSS/modal.css';
+import './CSS/Phone.css';
 import ListItem from './Components/ListItem.js';
 import Education from './Components/Education.js';
 import Technologies from './Components/Technologies.js';
@@ -34,10 +36,15 @@ function App() {
   const circles = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8',  'c9', 'c10', 'c11', 'c12', 'c13'];
   const fontColors = ['#4C4F6C', '#ED5151', '#FFFFFF'];
   
-  //test
+  //warning
   function closeModal() {
     setModalIsOpen(false);
   }
+
+  // Check if the user is accessing the website from a mobile device
+  const isMobileDevice = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  };
 
   //cursor animations
   useEffect(() => {
@@ -222,6 +229,20 @@ function App() {
     };
   }, []);
 
+
+
+
+
+
+  if (isMobileDevice()) {
+    return (
+      <div className='Mobile-warning'>
+        <h2>Mobile site still under development</h2>
+        <p>Please visit us using a desktop or laptop computer for the best experience.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="App" style={{cursor : "none"}}>
       {
@@ -253,6 +274,15 @@ function App() {
           <button onClick={closeModal}>Close Warning</button>
         </Modal>
       </div>
+      <div>
+        {isMobileDevice() && (
+          <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+            <h2>Mobile Site Still Under Development</h2>
+            <p>We apologize for the inconvenience, but the mobile version of our site is still under development. Please visit us using a desktop or laptop computer for the best experience.</p>
+          </Modal>
+        )}
+      </div>
+      
       {/* main pill elements */}
       <svg class="pillRed" width="3198" height="2957" viewBox="0 0 3198 2957" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1274 250V355V460V565V670C1274 994.5 1215 1234 956 1358.5C697 1483 250 1559.5 250 1987.5C250 1987.5 250 2200 250 2329C250 2548.5 419 2678.5 547 2700C869.319 2754.14 1008.94 2424.5 1054.34 2312.5C1327.34 1639 1477.34 2031.5 2947.84 2031.5" stroke="#ED5151" stroke-width="500" stroke-linecap="round"/>

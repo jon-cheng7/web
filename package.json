@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.14",
+    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
@@ -20,6 +22,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "build:css": "postcss ./src/CSS/tailwind.css -o ./public/tailwind.css",
+    "watch:css": "nodemon -e css -x 'npm run build:css'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,6 +46,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "nodemon": "^2.0.22",
+    "tailwindcss": "^3.3.2"
   }
 }
