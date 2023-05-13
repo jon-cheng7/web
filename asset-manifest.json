@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.062972ae.css",
-    "main.js": "/web/static/js/main.35cf7b9d.js",
+    "main.css": "/web/static/css/main.b6f31235.css",
+    "main.js": "/web/static/js/main.6eb411d8.js",
     "static/js/787.28cb0dcd.chunk.js": "/web/static/js/787.28cb0dcd.chunk.js",
-    "static/media/pfp.png": "/web/static/media/pfp.725bfe127a50e734662f.png",
+    "static/media/pfp.JPEG": "/web/static/media/pfp.703241f8e58f82dfa01c.JPEG",
     "static/media/waterloo.jpeg": "/web/static/media/waterloo.3a47a0dac219fd01205f.jpeg",
     "static/media/Cygre-Book.ttf": "/web/static/media/Cygre-Book.d79cf7d3f0a55432b5cd.ttf",
     "static/media/Cygre-Bold.ttf": "/web/static/media/Cygre-Bold.4c89a0b0a449cad019a6.ttf",
@@ -12,12 +12,12 @@
     "static/media/Gyanko-Regular.otf": "/web/static/media/Gyanko-Regular.54a26edf9e4314b9b470.otf",
     "static/media/background lines.svg": "/web/static/media/background lines.3786e9a312faf539ae77.svg",
     "index.html": "/web/index.html",
-    "main.062972ae.css.map": "/web/static/css/main.062972ae.css.map",
-    "main.35cf7b9d.js.map": "/web/static/js/main.35cf7b9d.js.map",
+    "main.b6f31235.css.map": "/web/static/css/main.b6f31235.css.map",
+    "main.6eb411d8.js.map": "/web/static/js/main.6eb411d8.js.map",
     "787.28cb0dcd.chunk.js.map": "/web/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.062972ae.css",
-    "static/js/main.35cf7b9d.js"
+    "static/css/main.b6f31235.css",
+    "static/js/main.6eb411d8.js"
   ]
 }
